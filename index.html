@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="Assets/css/style_mogo.css">
+        <link rel="stylesheet" href="Assets/css/style-menu.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
@@ -13,32 +14,49 @@
         <title>Mogo LP</title>
     </head>
     <body>
-        <header>
-            <div class="menu content">
-                <div class="logo">
-                    MoGo
+        <header id="header"> 
+            <div id="menu_nav" class="fixed">
+                <div class="menu content" >
+                    <div class="logo" id="logo" >
+                        MoGo
+                    </div>
+                    
+                    <nav class="" id="nav">
+                                <a class="nav_menu" href="#" data-scroll="#about">About</a>
+                            
+                                <a class="nav_menu" href="#" data-scroll="#work">Work</a>
+                            
+                                <a class="nav_menu" href="#" data-scroll="#blog">Blog</a>
+                            
+                                <a class="nav_menu" href="#" data-scroll="#contact">Contact</a>
+                            
+                                <a class="nav_menu" href="#" data-scroll="#services">Services</a>
+                                <a class="nav_icons" href=""><i class="fas fa-shopping-cart"></i></a>
+                                <a class="nav_icons" href=""><i class="fas fa-search"></i></a>
+                            
+                    </nav>
+                    <div id="btn_menu" class="burger_menu"></div> 
+                    <div class="menu-for-mobil">
+                        <ul>
+                            <li>
+                                <a class="menu_list" href="#" data-scroll="#about" >About</a>
+                            </li>
+                            <li>
+                                <a class="menu_list" href="#" data-scroll="#work">Work</a>
+                            </li>
+                            <li>
+                                <a class="menu_list" href="#" data-scroll="#blog">Blog</a>
+                            </li>
+                            <li>
+                                <a class="menu_list" href="#" data-scroll="#contact">Contact</a>
+                            </li>
+                            <li>
+                                <a class="menu_list" href="#" data-scroll="#services">Services</a>
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
-                <nav>
-                    <!-- <ul>
-                        <li> -->
-                            <a class="nav_menu" href="#">About</a>
-                        <!-- </li>
-                        <li> -->
-                            <a class="nav_menu" href="#">Work</a>
-                        <!-- </li>
-                        <li> -->
-                            <a class="nav_menu" href="#">Blog</a>
-                        <!-- </li>
-                        <li> -->
-                            <a class="nav_menu" href="#">Contact</a>
-                        <!-- </li>
-                        <li> -->
-                            <a class="nav_menu" href="#">Services</a>
-                            <a class="nav_icons" href=""><i class="fas fa-shopping-cart"></i></a>
-                            <a class="nav_icons" href=""><i class="fas fa-search"></i></a>
-                        <!-- </li>
-                    </ul> -->
-                </nav>
             </div>
             <div class="header-ttl">
                 <h2 class="sub-title">Creative Template</h2>
@@ -53,7 +71,7 @@
             </div>
         </header>
 
-        <section class="section">
+        <section class="section" id="about">
                 <div class="content forHorTab">
                     <div class="block-cont">
                         <h3 class="block-sub-title">What we do</h3>
@@ -119,7 +137,7 @@
             </div>
         </section>
 
-        <section class="services">
+        <section id="services" class="services">
             <div class="content">
                 <div class="block-cont">
                     <h3 class="block-sub-title">We work with</h3>
@@ -201,7 +219,7 @@
                 <div class="wwd-image"></div>
                 <div class="box-scroll">
                     <div class="scroll-items">
-                        <img class="scroll-icon" src="../Mogo/Assets/img/comment/icons/icon (1).png" alt="">
+                        <img class="scroll-icon" src="Assets/img/comment/icons/icon (1).png" alt="">
                         <div class="scroll-item-header">photography</div>
                         <div class="scroll-text">Lorem ipsum dolor sit amet, 
                             consectetur adipiscing elit, 
@@ -214,11 +232,11 @@
                             sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                     </div>
                     <div class="scroll-items">
-                        <img class="scroll-icon" src="../Mogo/Assets/img/comment/icons/icon (2).png" alt="">
+                        <img class="scroll-icon" src="Assets/img/comment/icons/icon (2).png" alt="">
                         <div class="scroll-item-header">creativy</div>
                     </div>
                     <div class="scroll-items">
-                        <img class="scroll-icon" src="../Mogo/Assets/img/comment/icons/icon (3).png" alt="">
+                        <img class="scroll-icon" src="Assets/img/comment/icons/icon (3).png" alt="">
                         <div class="scroll-item-header">web design</div>
                     </div>
                 </div>
@@ -405,7 +423,7 @@
             <div class="content logos"></div>
                 
         </section>
-        <div class="content header-plits">
+        <div id="work" class="content header-plits">
             <div class="block-cont">
                 <h3 class="block-sub-title">What we do</h3>
                 <h2 class="block-title">Some of our works</h2><hr>
@@ -421,18 +439,18 @@
         <section class='photos'>
             <div class="photo-cols">
                 <div class="photo-items">
-                    <img class="plits-img" src="../Mogo/Assets/img/photo-plits/1.png" alt="">
+                    <img class="plits-img" src="Assets/img/photo-plits/1.png" alt="">
                     <div class="photo-info">
-                        <img src="../Mogo/Assets/img/photo-plits/icon.png" alt="">
+                        <img src="Assets/img/photo-plits/icon.png" alt="">
                         <div class="photo-title">creatively designed</div>
                         <div class="photo-text">Lorem ipsum dolor sit</div>
                     </div>
                    
                 </div>
                 <div class="photo-items">
-                    <img class="plits-img" src="../Mogo/Assets/img/photo-plits/2.jpg" alt="">
+                    <img class="plits-img" src="Assets/img/photo-plits/2.jpg" alt="">
                     <div class="photo-info">
-                        <img src="../Mogo/Assets/img/photo-plits/icon.png" alt="">
+                        <img src="Assets/img/photo-plits/icon.png" alt="">
                         <div class="photo-title">creatively designed</div>
                         <div class="photo-text">Lorem ipsum dolor sit</div>
                     </div>
@@ -440,18 +458,18 @@
             </div>
             <div class="photo-cols">
                 <div class="photo-items">
-                    <img class="plits-img" src="../Mogo/Assets/img/photo-plits/3.png" alt="">
+                    <img class="plits-img" src="Assets/img/photo-plits/3.png" alt="">
                     <div class="photo-info">
-                        <img src="../Mogo/Assets/img/photo-plits/icon.png" alt="">
+                        <img src="Assets/img/photo-plits/icon.png" alt="">
                         <div class="photo-title">creatively designed</div>
                         <div class="photo-text">Lorem ipsum dolor sit</div>
                     </div>
                     
                 </div>
                 <div class="photo-items">
-                    <img class="plits-img" src="../Mogo/Assets/img/photo-plits/4.jpg" alt="">
+                    <img class="plits-img" src="Assets/img/photo-plits/4.jpg" alt="">
                     <div class="photo-info">
-                        <img src="../Mogo/Assets/img/photo-plits/icon.png" alt="">
+                        <img src="Assets/img/photo-plits/icon.png" alt="">
                         <div class="photo-title">creatively designed</div>
                         <div class="photo-text">Lorem ipsum dolor sit</div>
                     </div>
@@ -459,9 +477,9 @@
             </div>
             <div class="photo-cols">
                 <div class="photo-items">
-                    <img class="plits-img" src="../Mogo/Assets/img/photo-plits/5.png" alt="">
+                    <img class="plits-img" src="Assets/img/photo-plits/5.png" alt="">
                     <div class="photo-info">
-                        <img src="../Mogo/Assets/img/photo-plits/icon.png" alt="">
+                        <img src="Assets/img/photo-plits/icon.png" alt="">
                         <div class="photo-title">creatively designed</div>
                         <div class="photo-text">Lorem ipsum dolor sit</div>
                     </div>
@@ -469,17 +487,17 @@
             </div>
             <div class="photo-cols">
                 <div class="photo-items">
-                    <img class="plits-img" src="../Mogo/Assets/img/photo-plits/6.png" alt="">
+                    <img class="plits-img" src="Assets/img/photo-plits/6.png" alt="">
                     <div class="photo-info">
-                        <img src="../Mogo/Assets/img/photo-plits/icon.png" alt="">
+                        <img src="Assets/img/photo-plits/icon.png" alt="">
                         <div class="photo-title">creatively designed</div>
                         <div class="photo-text">Lorem ipsum dolor sit</div>
                     </div>
                 </div>
                 <div class="photo-items">
-                    <img class="plits-img" src="../Mogo/Assets/img/photo-plits/7.jpg" alt="">
+                    <img class="plits-img" src="Assets/img/photo-plits/7.jpg" alt="">
                     <div class="photo-info">
-                        <img src="../Mogo/Assets/img/photo-plits/icon.png" alt="">
+                        <img src="Assets/img/photo-plits/icon.png" alt="">
                         <div class="photo-title">creatively designed</div>
                         <div class="photo-text">Lorem ipsum dolor sit</div>
                     </div>
@@ -551,7 +569,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="blog">
             <div class="content">
                 <div class="block-cont">
                     <h3 class="block-sub-title">Our stories</h3>
@@ -635,7 +653,7 @@
            </div>
 
         </section>
-        <footer>
+        <footer id="contact">
             <div class="content footer_cont">
                 <div class="footer_cols-1">
                     <div class="logo logo_footer">MoGo</div>
@@ -707,6 +725,7 @@
                 <div class="copyright">© 2016 MoGo free PSD template by <a href="">Laaqiq</a></div>
             
         </footer>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="Assets/js/main.js"></script>
     </body>
 </html>
