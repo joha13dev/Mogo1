@@ -60,6 +60,7 @@ nav .nav_menu {
     background-color: rgba(232, 130, 130, .6);
     z-index: 99;
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     overflow: hidden;
     transition: .3s;
 }
